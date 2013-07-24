@@ -3,14 +3,17 @@ abstract: 'change content of a file atomically'
 author:
   - 'HIROSE Masaaki <hirose31 _at_ gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  Devel::Cover: 0
+  ExtUtils::MakeMaker: 6.36
   FindBin: 0
-  IO::Scalar: 0
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 0.91'
+  CPAN::Meta: 0
+  ExtUtils::MakeMaker: 6.36
+  Module::Install: 0
+  Module::Install::CPANfile: 0
+dynamic_config: 0
+generated_by: 'Module::Install version 1.06, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -21,16 +24,19 @@ no_index:
     - inc
     - t
     - xt
+provides:
+  IO::File::AtomicChange:
+    file: lib/IO/File/AtomicChange.pm
+    version: 0.04
 requires:
   File::Copy: 0
   File::Sync: 0
   File::Temp: 0
-  Filter::Util::Call: 0
   IO::File: 0
   POSIX: 0
   Path::Class: 0
   Time::HiRes: 0
 resources:
   license: http://dev.perl.org/licenses/
-  repository: git://github.com/hirose31/p5-io-file-atomicchange.git
-version: 0.03
+  repository: git://github.com/hirose31/IO-File-AtomicChange.git
+version: 0.04
